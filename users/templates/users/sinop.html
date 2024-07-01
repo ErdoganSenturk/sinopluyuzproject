@@ -1,0 +1,1304 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}
+
+  <main><!-- End #main -->
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container animate__animated animate__fadeInRight">
+
+        <ol>
+          <li><a href="{% url 'list' %}">Ana Sayfa</a></li>
+          <li>Sinop</li>
+        </ol>
+        <h2>Sinop İlçeler</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Tümü</li>
+              <li data-filter=".filter-Merkez">Merkez</li>
+              <li data-filter=".filter-Ayancik">Ayancık</li>
+              <li data-filter=".filter-Boyabat">Boyabat</li>
+              <li data-filter=".filter-Gerze">Gerze</li>
+              <li data-filter=".filter-Turkeli">Türkeli</li>
+              <li data-filter=".filter-Erfelek">Erfelek</li>
+              <li data-filter=".filter-Duragan">Durağan</li>
+              <li data-filter=".filter-Sarayduzu">Saraydüzü</li>
+              <li data-filter=".filter-Dikmen">Dikmen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 1</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop limanı turist gemisi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 2</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 3</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop gece görüntüsü"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 4</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop liman gece görüntüsü"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 5</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 6</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 7</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tepeden Sinop"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 8</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop yarımadası"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 9</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cezaevi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez10.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 10</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hamsilos"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez11.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 11</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez11.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman ve çevresi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez12.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 12</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez12.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman çıkışı"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez13.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 13</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez13.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sarıkum göleti ve sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez14.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 14</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez14.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hamsilos"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez15.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 15</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez15.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop Merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez16.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 16</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez16.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez sahili"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez17.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 17</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez17.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez sahili"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez18.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 18</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez18.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez sahili"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez19.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 19</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez19.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akliman"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez20.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 20</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez20.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez sahili"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez21.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 21</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez21.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop Sarıkum plajı"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez22.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 22</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez22.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop feneri"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/merkez/merkez23.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 23</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez23.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez "><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Merkez">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler//merkez/merkez24.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sinop Foto 24</h4>
+                <p>Merkez</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/merkez/merkez24.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sinop merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5 ">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 1</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="İnaltı Mağarası"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 2</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 3</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Ayancık Foto 4</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="İnaltı mağara girişi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 5</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 6</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik//ayancik6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 7</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 8</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 9</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik10.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 10</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik11.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 11</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik11.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık merkez"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik12.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 12</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik12.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="İnaltı mağarası"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik13.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 13</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik13.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik14.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 14</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik14.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik15.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 15</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik15.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik16.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 16</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik16.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik17.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 17</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik17.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="İnaltı mağarası"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik18.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 18</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik18.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık sahil"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik19.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 19</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik19.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Akgöl"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik20.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 20</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik20.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik21.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 21</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik21.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Ayancik">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/ayancik/ayancik22.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ayancık Foto 22</h4>
+                <p>Ayancık</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/ayancik/ayancik22.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ayancık"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazalt kayalıkları"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 2</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Boyabat kalesi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazalt kayalıkları"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 4</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazalt kayalıkları"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 5</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Boyabat kalesi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 6</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazalt kayalıkları yolu"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 7</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazalt kayalıkları yolu"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 8</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Beyazıt camii"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 9</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Salar köyü kaya mezarı"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat10.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 10</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Salar köyü kaya mezarı"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat11.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 11</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat11.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Salar köyü kaya mezarı"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat12.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 12</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat12.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Boyabat kalesi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Boyabat">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/boyabat/boyabat13.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 13</h4>
+                <p>Boyabat</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/boyabat/boyabat13.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Boyabat kalesi"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 2</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Gerze">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/gerze/gerze9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Gerze</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/gerze/gerze9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli10.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Turkeli">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/turkeli/turkeli11.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Türkeli</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/turkeli/turkeli11.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Erfelek">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/erfelek/erfelek1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Erfelek</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/erfelek/erfelek1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Erfelek">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/erfelek/erfelek2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Erfelek</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/erfelek/erfelek2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 2</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 3</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 4</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 5</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Duragan">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/duragan/duragan6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 6</h4>
+                <p>Durağan</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/duragan/duragan6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Sarayduzu">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/sarayduzu/sarayduzu1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Saraydüzü</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/sarayduzu/sarayduzu1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a  href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Dikmen">
+            <div class="portfolio-wrap rounded-5">
+              <img src="{% static 'assets/ilceler/dikmen/dikmen1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foto 1</h4>
+                <p>Dikmen</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/ilceler/dikmen/dikmen1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto 1"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'sinop_detail' %}" title="Detaylar"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+
+    {% endblock %}
+
+    {% include 'users/partials/_footer.html' %}

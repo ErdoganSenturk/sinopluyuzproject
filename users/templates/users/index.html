@@ -1,0 +1,184 @@
+{% extends 'users/partials/_base.html' %} {%load crispy_forms_tags %} {% load
+static %} {% block content %}
+
+
+
+<main id="main">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div
+        id="heroCarousel"
+        data-bs-interval="4000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url({{ mainsponsor1.profile_pic1.url }})">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown border border-white rounded px-5">
+                  {{mainsponsor1.first_name}} 
+                  <span>şkfdhazxdfg</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp ">
+                  {{mainsponsor1.biography|truncatechars:120}}
+                </p>
+                <a href="{% url 'detail' mainsponsor1.slug %}" 
+                  class="btn-get-started animate__animated animate__fadeInUp">Daha Fazlası</a> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url({{ mainsponsor2.profile_pic1.url }})">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated fanimate__adeInDown border border-white rounded px-5">
+                  {{mainsponsor2.firm_name}}<span>hgfdh</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  {{mainsponsor2.biography|truncatechars:120}}
+                </p> 
+                <a href="{% url 'detail' mainsponsor2.slug %}"
+                  class="btn-get-started animate__animated animate__fadeInUp">Daha Fazlası</a> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url({{ mainsponsor3.profile_pic1.url }})">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown border border-white rounded px-5">
+                  {{mainsponsor3.firm_name}} <span>klktjrdfg</span> 
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  {{mainsponsor3.biography|truncatechars:120}}
+                </p>
+                <a  href="{% url 'detail' mainsponsor3.slug %}"
+                  class="btn-get-started animate__animated animate__fadeInUp">Daha Fazlası</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left text-danger"
+            aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right text-danger"
+            aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </section> 
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg-4 col-md-6 my-2 animate__animated animate__zoomIn">
+            <div class="icon-box m-auto text-center">
+              <img src="{{ sponsor4.profile_pic1.url }}"  class="w-100 h-75 p-2" alt="sinoplu_image"/>
+              <h3 class="mt-3 border border-dark rounded">{{sponsor4.firm_name}}</h3>
+              <p class=" border border-dark rounded">
+                  <a  href="{% url 'detail' sponsor4.slug %}">{{sponsor4.first_name}}</a>  
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-2 animate__animated animate__zoomIn">
+            <div class="icon-box m-auto text-center">
+              <img src="{{ sponsor7.profile_pic1.url }}"  class="w-100 h-75 p-2"  alt="sinoplu_image"/>
+              <h3 class="mt-3 border border-dark rounded">{{sponsor7.firm_name}}</h3>
+              <p class=" border border-dark rounded">
+                <a href="{% url 'detail' sponsor7.slug %}">{{sponsor7.first_name}}</a>  
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-2 animate__animated animate__zoomIn">
+            <div class="icon-box m-auto text-center">
+              <img src="{{ sponsor8.profile_pic1.url }}" class="w-100 h-75 p-2" alt="sinoplu_image"/>
+              <h3 class="mt-3 border border-dark rounded">{{sponsor8.firm_name}}</h3>
+              <p class=" border border-dark rounded">
+                  <a href="{% url 'detail' sponsor8.slug %}">{{sponsor8.first_name}}</a> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- End Featured Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section
+      id="services"
+      class="services"
+      style="
+        background: url('https://seyler.ekstat.com/img/max/800/C/CymIir8aGaYAdLCZ-636777082402643254.jpg')
+          no-repeat center center fixed; background-size: cover; min-height: 800px;">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-center mt-4 ">
+
+                <form method="get" class="d-flex justify-content-center align-items-center text-white w-100"><p>
+                  {% csrf_token %} {{filtered_persons.form}}
+                  <button type="submit" class="btn btn-primary mx-3 rounded">
+                    Ara
+                  </button>
+                </form> 
+          </div>
+
+          {% for sinoplu in paginated_objects %}
+          <div  class="col-lg-4 col-md-6 d-flex align-items-stretch my-4 animate__animated animate__zoomIn" >
+            <div class="icon-box m-auto h-100">
+              <img  src="{{ sinoplu.profile_pic1.url }}" class="rounded-3" alt="sinoplu_image"
+                style="width: 16rem; height: 10rem" />
+              <h5 class="card-title border border-white rounded my-4">
+                {% if sinoplu.firm_name %}
+                <a href="{% url 'detail' sinoplu.slug %}">{{sinoplu.firm_name}}</a>
+                {% else %}
+                <a href="{% url 'detail' sinoplu.slug %}"
+                  >{{sinoplu.first_name}} {{sinoplu.last_name}}</a>
+              </h5>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+  <div id="pagination_container" class="text-center ">
+    <span  class="page-links ">
+        {% if paginated_objects.has_previous %}
+          <button class="btn btn-primary"  type="button" onclick="navigateUrl('?page=1')">İlk</button>
+            <button class="btn btn-primary"  type="button" onclick="navigateUrl('{{ request.get_full_path }}', {{ paginated_objects.previous_page_number }})">Önceki</button>
+        {% endif %}
+        <span class="text-white" class="page-current">
+            {{ paginated_objects.number }} / {{ paginated_objects.paginator.num_pages }}
+        </span>
+        {% if paginated_objects.has_next %}
+            <button class="btn btn-primary"  type="button" onclick="navigateUrl('{{ request.get_full_path }}', {{ paginated_objects.next_page_number }})">Sonraki</button>
+            <button class="btn btn-primary"  type="button" onclick="navigateUrl('{{ request.get_full_path }}', {{ paginated_objects.paginator.num_pages }})">Son</button>
+            {% endif %}
+    </span>
+  </div>
+    </section>
+    <!-- End #servies -->
+  </main>
+</main>
+
+{% endblock %}

@@ -1,0 +1,87 @@
+{% load static %}
+
+
+<!-- ======= Footer ======= -->
+
+  <footer id="footer">
+    <div style="background-color: #6351ce" >
+      <div class="container d-flex justify-content-between " >
+        <div class="d-flex my-2 me-5 ">
+          <span class="my-auto">Sosyal medya :</span>
+        </div>
+        <div class="sinoplu-social-links my-auto">
+          <a href="https://www.twitter.com/erdgnsnturk" class="twitter text-white me-2"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook text-white me-2"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram text-white me-2"><i class="bx bxl-instagram"></i></a>
+          <a href="http://www.linkedin.com/in/erdogansenturk/" class="linkedin text-white me-2"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.youtube.com/@sinopluyuz" class="youtube text-white me-2"><i class="bx bxl-youtube"></i></a>
+          <a href="#" class="pinterest text-white"><i class="bx bxl-pinterest"></i></a>  
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top" >
+      <div class="container" >
+        <div class="row ">
+          <div class="col-lg-3 col-md-6 footer-links ">
+            <h4>LiNKLER</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'list' %}">Ana sayfa</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}">Hakkımda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'sinop' %}">Sinop</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact' %}">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>SERViSLER</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services' %}">Özel Ders</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services' %}">Web Tasarım / Kodlama</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services' %}">Reklam / Sponsor</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>iLETiŞiM</h4>
+              <strong>Mobil :</strong> +1 5589 55488 55<br>
+              <strong>email :</strong> sinopluyuzcom@hotmail.com<br>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Sinopluyuz hakkında</h3>
+            <p>Sinopluyuz.com platformu sadece gerek kişisel gerekse kurumsal olarak kişilerin kendilerini  kısa ve öz olarak tanıtmasını amaçlamaktadır. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+<!-- End of .container -->
+  
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+
+  <!-- Testimony JS File -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+  <!-- pagination js -->
+  <script src="{% static 'assets/js/pagination.js' %}"></script>
+
+
+</body>
+
+</html>     

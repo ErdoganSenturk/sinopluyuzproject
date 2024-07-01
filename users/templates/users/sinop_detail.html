@@ -1,0 +1,110 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}  
+
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class=" animate__animated animate__fadeInRight">
+        <ol>
+          <li><a href="{% url 'list' %} ">Ana Sayfa</a></li>
+          <li>Sinop</li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper ">
+              <div class="swiper-wrapper align-items-center ">
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/merkez/merkez2.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/merkez/merkez7.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/merkez/merkez6.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/merkez/merkez22.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/ayancik/ayancik2.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/ayancik/ayancik16.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/ayancik/ayancik20.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/boyabat/boyabat5.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/boyabat/boyabat9.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/boyabat/boyabat8.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/gerze/gerze7.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/gerze/gerze8.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/gerze/gerze1.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/turkeli/turkeli3.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/turkeli/turkeli11.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/turkeli/turkeli8.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/sarayduzu/sarayduzu1.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/erfelek/erfelek2.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/duragan/duragan1.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/duragan/duragan3.jpg' %}" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img class='rounded-4' src="{% static 'assets/ilceler/duragan/duragan2.jpg' %}" alt="">
+                </div>
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Sinop Hakkında</h3>
+              <ul>
+                <li><strong>Nüfus</strong>: 230.000 </li>
+                <li><strong>Alan</strong>: 23423 km<sup>2</sup></li>
+                <li>Bölge adını en eski adı olan Sinope'den alır. En önemli geçim kaynaklarından birisi balıkçılıktır. 
+                  Sinop'un hamsisi yurdun dört bir yanına ulaştırılarak sofralarımızda yerini almaktadır. Akliman, 
+                  Sarıkum plajı, Hamsilos Fiyordu, İnceburun, Sinop cezaevi, Sinop Kalesi, Boyabat kalesi, Boyabat Bazalt Kayalıkları,
+                  Kaya mezarları, İnaltı mağarası, Akgöl  gibi turistik yerleri ile Sinop ilinde gezilmesi gereken sadece birkaç yerden bazılarıdır.
+                  Yine maket kotra yapımı ve tahta el işlemeciliği konusunda hak ettiği yeri bulmuştur.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    
+    {% endblock %}
+    {% include 'users/partials/_footer.html' %}

@@ -1,0 +1,78 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <main id="main" 
+  {% comment %} style="  background:url('https://seyler.ekstat.com/img/max/800/C/CymIir8aGaYAdLCZ-636777082402643254.jpg') no-repeat center center fixed;
+background-size:cover; min-height:350px;  {% endcomment %}
+">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container animate__animated animate__fadeInRight">
+        <ol>
+          <li><a href="{% url 'list' %}">Ana Sayfa</a></li>
+          <li>Servisler</li>
+        </ol>
+        <h2>Servisler </h2>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/book_pencil.jpg' %}" class="img-fluid rounded-4 shadow-lg" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Özel Ders</h3>
+            <p class="fst-italic">
+              FİZİK / MATEMATİK
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> AYT-TYT Sınavlarına hazırlık </li>
+              <li><i class="bi bi-check-circle"></i> Ara sınıflara okul dersleri için</li>
+              <li><i class="bi bi-check-circle"></i> Mühendislik Fakültelerinin Tüm Bölümleri için Fizik I-II </li>
+            </ul>
+            <p>
+            Öğrencimiz derslerini anlamakta mı zorlanıyor? Yoksa üniversite sınavına mı hazırlanıyor? Ders ihtiyacınız varsa doğru yerdesiniz. 
+            İrtibat için iletişim kısmından mesaj atabilirsiniz. En kısa zamanda dönüş sağlanacaktır.       
+            </p>
+          <p> Eğer diğer derslerden ihtiyacınız olursa bu konuda alanında etkin hocalarla sizi buluşturma konusunda yardımcı olurum.
+          </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+        <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/wwwlogo.jpg' %}" class="img-fluid rounded-4 shadow-lg" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Web Tasarım</h3>
+            <p class="fst-italic"> www.isminiz.com  </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Sınırlarınızı aşmak mı istiyorsunuz?</li>
+              <li><i class="bi bi-check-circle"></i> Her yerden ulaşılabilir olmak sizin için önemli mi?</li>
+              <li><i class="bi bi-check-circle"></i> Vizyonunuzu daha ileriye mi taşımak istiyorsunuz? </li>
+              <li><i class="bi bi-check-circle"></i> Bir web siteniz yoksa hala geç değil! </li>
+            </ul>
+             </div>
+          
+        </div>
+      </div>
+    </section><!-- End About Section -->
+  </main><!-- End #main -->
+
+    
+    {% endblock %}
+
+    {% include 'users/partials/_footer.html' %}

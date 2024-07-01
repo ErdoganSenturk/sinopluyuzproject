@@ -1,0 +1,44 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}
+
+  <main><!-- End #main -->
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container animate__animated animate__fadeInRight">
+
+        <ol>
+          <li><a href="{% url 'list' %}">Ana Sayfa</a></li>
+          <li>Sinop</li>
+        </ol>
+        <h2>Sinop Kültürü</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <p>
+          Hitit kaynaklarından öğrenildiğine göre, yörenin en eski halkı olan Kaşkalar'ın konuştuğu dil ile Hititler'in dil benzerlikler göstermekteydi. Pontus Krallığı'nın egemenliğine girdiği MÖ 2. yüzyıl başlarına kadar özgürlüğünü koruyan Sinop kenti, bu dönemde bayındır bir liman ve balıkçılık merkeziyidi. Eski kaynaklarda, limanda kurulmuş olan dalyanlarda avlanan palamutlardan bir bölümünün büyük havuzlarda canlı olarak korunduğu konusunda bilgiler vardır. Roma döneminde yaptırılan uzun su kemerleriyle kente su getirildi. Bizans döneminde önemli bir liman ve askeri üs konumunda olan Sinop, Candaroğulları yönetimi sırasında tersanesiyle ün kazandı. Bu sırada Sinop tersanesinde yapılan büyük bir tekne, Osmanlı donanmasına örnek olması amacıyla İstanbul'a götürüldü. Osmanlı döneminde kentte yaşayan Rumlar daha çok küçük üretim ve ticaretle uğraşırdı.
+
+19. yüzyılda Anadolu'nun iç kesimleriyle daha kolay ulaşım sağlayan Samsun ve Trabzon limanlarının önem kazanmasından sonra Sinop eski canlılığını yitirmeye başladı. Ticaretin gelişme gösterdiği 19. yüzyıl sonlarında kent surların dışına taştı.
+
+Sinop'ta doğan şair Ahmet Muhip Dıranas, 1940'ta yayımlanan bir yazısında çocukluğunun geçtiği kenti şöyle anlatır: "Misafir olacağım eve varmak için yıkık kale duvarları arasında geçiyordum. Oysaki 30 yıl önce şehrin bütün surları sağlamdı. Biz çocuklar bir taraftan çıktık mı bu surların üstüne, bütün kasabanın etrafını fırdolayı dönerdik. Şimdi kala kala birkaç burçla şehrin ortasına doğru düşen ve saat kulesi hizmetini gören Roma üslubunda bir kale kalmış. Daha eskiden burada Rumlar varken gece oldu mu, surun kapıları kapanır, dışarıdakiler dışarıda, içeridekiler içeride kalırmış. Canlı ve hareketli olan Rumlar, yarımadaya doğru olan kısımda ve kale dışındaydılar. Kenar boyunca kahveleri, çalgılı gazinoları ve meyhaneleri vardı.
+
+Yaz gecelerinde liman, gezi sandalları ve balıkçı kayıklarının meşaleleriyle lale tarlasına benzerdi. Şarkılar, kahkahalar... Bütün o yangınlardan ve harp felaketlerinden sonra hepsi bir hayal oldu."
+
+Sinop Kalesi daha çok cezaevi olarak ün kazanmış bir tarihsel yapıdır. Özellikle edebiyat ve siyaset alanında ün kazanmış ve çeşitli nedenlerle yargılanıp hapse makûm edilmiş birçok kişi bu cezaevinde yatmıştır. Bu kişilerden biri de ünlü öykü ve roman yazarı Sabahattin Ali'dir. İlkçağ düşünürlerinden Diyojen, Sinop doğumludur. Darphane sorumlusu olan babasıyla birlikte sahte para basmakla suçlanan Diyojen'in Sinop'tan sürgün edildiği bilinir.
+
+19. yüzyıl sonlarında Kafkasya'dan gelen göçmenlerden bir bölümünün yerleştirildiği kentin 10 bine yakın olan nüfusunun yüzde 40'ı Rumlardan oluşuyordu. 1950'de ise kentin nüfusu 6 bini bile bulmuyordu.
+
+      </p>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+
+    {% endblock %}
+
+    {% include 'users/partials/_footer.html' %}

@@ -1,0 +1,36 @@
+	{% load static %}
+    
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-between">
+
+      <div class="logo animate__animated animate__fadeInLeft">
+        <a href="{% url 'list' %}"> <img src="{% static 'assets/img/logo.jpg' %}" alt="Sinopluyuz logo"></a>      
+      </div>
+
+      <nav id="navbar" class="navbar animate__animated animate__fadeInRight">
+        <ul>
+          <li><a class="active" href="{% url 'list' %}">Ana Sayfa</a></li>
+          <li><a href="{% url 'about' %}">Hakkımda</a></li>
+          <li><a href="{% url 'sinop' %}">Sinop</a></li>
+          <li><a href="{% url 'services' %}">Servisler</a></li>
+          <li><a href="{% url 'contact' %}">İletişim</a></li>
+
+          {% if request.user.is_authenticated %}
+          <li><a href="{% url 'list' %}"><span class='text-bg-primary rounded px-2 bg-danger'>{{user}} </span></a></li>
+          <li><a href="{% url 'user_logout' %}" >Çıkış</a></li>
+          {% else %}
+          <li><a class=" text-danger " href="{% url 'user_login' %}">Giriş</a></li>
+          <li><a class=" text-danger " href="{% url 'register' %}">Kayıt</a></li>
+          {% endif %}
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+

@@ -1,0 +1,31 @@
+{% extends 'users/partials/_base.html' %} {% load static %} 
+ {%load crispy_forms_tags %} 
+ {% block content %}
+ 
+
+<main id="main" style="  background:url('https://seyler.ekstat.com/img/max/800/C/CymIir8aGaYAdLCZ-636777082402643254.jpg') no-repeat center center fixed;
+background-size:cover;  min-height:1750px; ">
+ <div class="container  text-white">
+  <div class="row ">
+    <div class="col-md-8 offset-md-2 ">
+      <h2  class="mt-4">Sinoplu kayıt formu</h2>
+      {% if request.user.is_authenticated %}
+      <h3>Kayıt olduğunuz için teşekkürler...</h3>
+      {% else %}
+      <form class="mb-3" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}     
+        {{ form_user | crispy }}
+        {{ form_profile| crispy }}
+        <a href="{% url 'kullanim_sartlari' %}" target="_blank">Sinopluyuz.Com'a kayıt olma  şartlarını kabul ediyorsanız üstteki kutuyu işaretleyiniz. </a>
+        
+        <button type="submit" class="btn btn-primary w-100 mt-4">Kayıt ol</button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+</div>  
+</main>
+
+
+{% endblock%}
+{% include 'users/partials/_footer.html' %}

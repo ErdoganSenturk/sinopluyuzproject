@@ -1,0 +1,53 @@
+{% extends 'users/partials/_base.html' %} {% load static %}
+ {% comment %} {% load crispy_forms_tags %} {% endcomment %}
+ {% block content %}
+
+
+  <main id="main" 
+  style="  background:url('https://seyler.ekstat.com/img/max/800/C/CymIir8aGaYAdLCZ-636777082402643254.jpg') no-repeat center center fixed;
+  background-size:cover; 
+  min-height:650px; 
+  opacity:0.9;
+  ">
+<div class="container text-white " >
+  <div class="row ">
+    <div class="col-md-6 offset-md-3 ">
+      <h1>Giriş Sayfası</h1>
+      <br />
+
+      {% if messages %} 
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} text-center  mt-2 ">{{ message }}</div>
+        {% endfor %} 
+      {% endif %}
+
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" >Kullanıcı adı</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Şifre</label>
+          <input type="password" class="form-control" name="password" />
+        </div>
+        <button type="submit" class="btn btn-primary mr-5 px-4">Giriş</button>
+        <small class="text-muted">
+          <a href="{% url 'password_reset' %}">Şifremi unuttum?</a>
+        </small>
+      </form>
+
+      <div class="border-top mt-4">
+        <small class="text-dark">
+          <a  href="{% url 'register' %}">Buradan kayıt olabilirsiniz.</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</div> 
+</main>
+{% endblock %}
+{% include 'users/partials/_footer.html' %}

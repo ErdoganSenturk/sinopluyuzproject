@@ -1,0 +1,42 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}
+
+  <main><!-- End #main -->
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container animate__animated animate__fadeInRight">
+
+        <ol>
+          <li><a href="{% url 'list' %}">Ana Sayfa</a></li>
+          <li>Sinop</li>
+        </ol>
+        <h2>Sinop Kültürü</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <form method="post">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"> Email Subject</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="subject" name="subject">
+            </div>
+            <div>
+              <label for="exampleFormControlTextarea1" class="form-label"> Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+            </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+    {% endblock %}
+    {% include 'users/partials/_footer.html' %}

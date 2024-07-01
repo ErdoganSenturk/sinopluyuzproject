@@ -1,0 +1,89 @@
+
+{% extends 'users/partials/_base.html' %}
+{% load static %}
+{% block content %}  
+
+  <main id="main" >
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container d-flex justify-content-between ">
+          <div class=" animate__animated animate__fadeInLeft">
+            <ol>
+              <li><a href="{% url 'list' %} ">Ana Sayfa</a></li>
+              <li>Sinoplu Detayları</li>
+            </ol>
+            <h2>{{sinoplu.first_name}} {{sinoplu.last_name}}</h2>
+          </div>
+        <div class=" animate__animated animate__fadeInRight">
+          {% if sinoplu.avatar %}<img src="{{ sinoplu.avatar.url }}" class="avatar rounded-circle shadow-lg" style="width: 80px;" alt="Avatar" />
+          {% else %}<img src="{% static 'assets/img/user-man.jpg'%}" class="avatar rounded-circle shadow-lg" style="width: 80px;" alt="Avatar" />
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-details" class="portfolio-details ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-8 animate__animated animate__fadeInLeft">
+            <div class="portfolio-details-slider swiper ">
+              <div class="swiper-wrapper align-items-center ">
+                <div class="swiper-slide ">
+                  <img class='rounded-4 font-fa' src="{{ sinoplu.profile_pic1.url }}" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class='rounded-4'  src="{{ sinoplu.profile_pic2.url }}" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class='rounded-4'  src="{{ sinoplu.profile_pic3.url }}" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 content  animate__animated animate__fadeInRight">
+            <div class="portfolio-info ">
+              <h3 style="font-family:AnnieSignature">{{sinoplu.first_name}} {{sinoplu.last_name}}</h3>
+              <ul>
+                <li>{% if sinoplu.firm_name %}<strong>Firma Adı</strong> : {{sinoplu.firm_name}} {% else %}<strong> Firma Adı</strong>:  {% endif %}</li>
+                <li>{% if sinoplu.category %}<strong>Faaliyet alanı</strong> : {{sinoplu.category}} {% else %}<strong> Faaliyet alanı</strong> :  {% endif %}</li>
+                <li>{% if sinoplu.city %}<strong>Lokasyon</strong> : {{sinoplu.city}} {% else %}<strong> Lokasyon</strong>:  {% endif %}</li>
+                <li>{% if sinoplu.user.email %}<strong>email</strong> : {{sinoplu.user.email}} {% else %}<strong> email</strong> :  {% endif %}</li>
+                <li><strong>Kayıt Tarihi </strong> : {{sinoplu.register_date|date:'d-m-Y'}}</li>
+                <li>{% if sinoplu.phone_number %}<strong>Mobile</strong> : {{sinoplu.phone_number}} {% else %}<strong> Mobile</strong> :  {% endif %}</li>
+                <li>{% if sinoplu.age %}<strong>Yaş</strong> : {{sinoplu.age}} {% else %}<strong> Yaş</strong> :  {% endif %}</li>
+                <li>{% if sinoplu.web_adres %}<strong> Web Adresi</strong> : <a href="{{sinoplu.web_adres}}" >{{sinoplu.web_adres}}</a>{% else %}<strong> Web Adresi</strong> : <a>www.sinopluyuz.com</a> {% endif %}</li>          
+                <li><strong>İlgi Alanları </strong>: {{ converted_interests }} </li>            
+                <li class='sinoplu-social-links'> <strong >Sosyal Medya</strong> : 
+                    {% if sinoplu.linkedin %}<a href="{{sinoplu.twitter}}" target="_blank" class="twitter me-1"><i class="bi bi-twitter-x"></i></a>{% else %}<a href="https://twitter.com/GalatasaraySK" target="_blank" class="twitter me-1"><i class="bi bi-twitter-x"></i></a>{% endif %}
+                    {% if sinoplu.facebook %}<a href="{{sinoplu.facebook}}" target="_blank" class="facebook me-1"><i class="bx bxl-facebook"></i></a>{% else %}<a href="https://www.facebook.com/Galatasaray/?locale=tr_TR" target="_blank" class="facebook me-1"><i class="bx bxl-facebook"></i></a>{% endif %}
+                    {% if sinoplu.instagram %}<a href="{{sinoplu.instagram}}" target="_blank" class="instagram me-1"><i class="bx bxl-instagram"></i></a>{% else %}<a href="https://www.instagram.com/galatasaray/" target="_blank" class="instagram me-1"><i class="bx bxl-instagram"></i></a>{% endif %}
+                    {% if sinoplu.youtube%}<a href="{{sinoplu.youtube}}" target="_blank" class="youtube me-1"><i class="bx bxl-youtube"></i></a>{% else %}<a href="https://www.youtube.com/@sinopluyuz" target="_blank" class="youtube me-1"><i class="bx bxl-youtube"></i></a>{% endif %}
+                    {% if sinoplu.linkedin %}<a href="{{sinoplu.linkedin}}" target="_blank" class="linkedin me-1"><i class="bx bxl-linkedin"></i></a>{% else %}<a href="https://www.linkedin.com/in/erdogansenturk/" target="_blank" class="linkedin me-1"><i class="bx bxl-linkedin"></i></a>{% endif %}
+                </li>
+                <li><span class="me-2"><i class="bi bi-heart-fill"></i> {{ sinoplu.like_count }}</span><span><i class="bi bi-eye-fill"></i> {{ sinoplu.view_count }}</span></li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+          <h2 class="mb-3">{{sinoplu.firm_name}} biyografisi</h2>
+          <p>{{sinoplu.biography|safe}} </p>
+          <small>Bu Sinoplu profili <span class="fw-bold">{{user}} </span> tarafından <span class="fw-bold">{{ sinoplu.register_date|timesince}} </span> önce oluşturuldu.</small>
+          <br>
+          {% if request.user.is_authenticated  %} 
+            <form action="{% url 'like' sinoplu.slug %}" method="POST">
+                {% csrf_token %}
+                {% comment %} <input type="hidden" name="view_and_like ">
+                <input type="hidden" name="user"> {% endcomment %}
+                <button type="submit"><i class="bi bi-heart-fill "></i></button>
+                {{sinoplu.like_count }}
+            </form>
+          <br>
+            <p >sayfamda <a href="{% url 'update' sinoplu.slug %}"><button class="btn btn-primary px-2">güncelleme</button></a> yapmak istiyorum... </p>
+          {% endif %}
+          <br>
+      </div>
+    </section>
+  </main>
+    
+{% endblock %}
+{% include 'users/partials/_footer.html' %}
